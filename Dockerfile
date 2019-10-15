@@ -5,6 +5,7 @@ RUN yum update -y
 
 ADD conf/proxysql.repo /etc/yum.repos.d/proxysql.repo
 ADD conf/proxysql.cnf /etc/proxysql/proxysql.cnf
+ADD start.sh /root/start.sh
 
 RUN ln -s -f /bin/true /usr/bin/chfn
 RUN rm -fr /etc/localtime   
