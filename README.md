@@ -1,2 +1,3 @@
 # ProxySQL
-ProxySQL 
+
+Centos7 ProxySQL SOON!
