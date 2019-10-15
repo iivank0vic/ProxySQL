@@ -1,7 +1,0 @@
-cat <<EOF | tee /etc/yum.repos.d/proxysql.repo
-[proxysql_repo]
-name= ProxySQL YUM repository
-baseurl=https://repo.proxysql.com/ProxySQL/proxysql-2.0.x/centos/\$releasever
-gpgcheck=0
-gpgkey=https://repo.proxysql.com/ProxySQL/repo_pub_key
-EOF
