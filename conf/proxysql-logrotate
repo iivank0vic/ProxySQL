@@ -1,0 +1,15 @@
+/var/lib/proxysql/proxysql.log {
+
+missingok
+
+daily
+
+notifempty
+
+compress
+
+create 0600 root root
+
+rotate 5
+
+}
