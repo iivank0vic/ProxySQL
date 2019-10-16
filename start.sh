@@ -12,7 +12,7 @@ function ReplaceConf {
 }
 
 function StartProxy { 
-    exec proxysql -f /etc/proxysql/proxysql.cnf
+    exec proxysql -f /etc/proxysql.cnf
 }
 
 ReplaceConf
