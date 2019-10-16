@@ -32,6 +32,9 @@ A `docker-compose.yml` looks like this:
           - "./data/proxysql:/var/lib/proxysql"
 
 
+- mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='ProxySQL> ' # CMD LOGIN
+- http://yourip:6080/ # Web Monitoring
+
 For more information about the Compose file, see the
 [Compose file reference](https://github.com/docker/docker.github.io/blob/master/compose/compose-file/compose-versioning.md).
 
