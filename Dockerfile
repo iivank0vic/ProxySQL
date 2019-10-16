@@ -5,6 +5,7 @@ RUN yum update -y
 
 ADD conf/proxysql.repo /etc/yum.repos.d/proxysql.repo
 ADD conf/proxysql.cnf /etc/proxysql/proxysql.cnf
+ADD conf/proxysql-logrotate /etc/logrotate.d/proxysql
 ADD start.sh /root/start.sh
 
 RUN ln -s -f /bin/true /usr/bin/chfn
@@ -15,6 +16,6 @@ RUN yum -y install \
         sudo vim curl curl-devel \
         wget git htop ncdu net-tools \
         less unzip nano vim bash-completion bash-completion-extras \
-        proxysql
+        proxysql mysql
         
 CMD  /root/start.sh && tail -f /dev/null
