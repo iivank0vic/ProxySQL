@@ -7,7 +7,7 @@ admin_variables=
     refresh_interval=2000
     web_enabled=true
     web_port=6080
-    stats_credentials="stats:admin"
+    stats_credentials="stats:adminWebMON"
 }
  
 mysql_variables=
@@ -30,8 +30,8 @@ mysql_variables=
     ping_timeout_server=200
     commands_stats=true
     sessions_sort=true
-    monitor_username="proxysqluser"
-    monitor_password="proxysqlpassword"
+    monitor_username="proxysql"
+    monitor_password="pr0xyPass"
     monitor_galera_healthcheck_interval=2000
     monitor_galera_healthcheck_timeout=800
 }
