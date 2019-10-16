@@ -11,9 +11,14 @@ function ReplaceConf {
     
 }
 
+function ProxyPerm { 
+    chown proxysql:proxysql /var/lib/proxysql
+}
+
 function StartProxy { 
     exec proxysql -f /etc/proxysql.cnf
 }
 
 ReplaceConf
+ProxyPerm
 StartProxy
