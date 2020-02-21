@@ -1,15 +1,13 @@
-/var/lib/proxysql/proxysql.log {
-
-missingok
-
-daily
-
-notifempty
-
-compress
-
-create 0600 root root
-
-rotate 5
-
+/var/lib/proxysql/proxysql.log 
+{
+    rotate 15
+    daily
+    minsize 1M
+    maxsize 1G
+    missingok
+    dateext
+    dateformat -%Y-%m-%d-%s
+    notifempty
+    compress
+    create 0644 root root
 }
