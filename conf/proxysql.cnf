@@ -54,7 +54,13 @@ mysql_servers =
 (
     { address="db1.cluster.node" , port=3306 , hostgroup=10, max_connections=100 },
     { address="db2.cluster.node" , port=3306 , hostgroup=10, max_connections=100 },
-    { address="db3.cluster.node" , port=3306 , hostgroup=10, max_connections=100 }
+    { address="db3.cluster.node" , port=3306 , hostgroup=10, max_connections=100 },
+    { address="db1.cluster.node" , port=3306 , hostgroup=20, max_connections=100 },
+    { address="db2.cluster.node" , port=3306 , hostgroup=20, max_connections=100 },
+    { address="db3.cluster.node" , port=3306 , hostgroup=20, max_connections=100 },
+    { address="db1.cluster.node" , port=3306 , hostgroup=30, max_connections=100 },
+    { address="db2.cluster.node" , port=3306 , hostgroup=30, max_connections=100 },
+    { address="db3.cluster.node" , port=3306 , hostgroup=30, max_connections=100 }
 )
  
 mysql_query_rules =
